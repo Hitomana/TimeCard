@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+html
+{
+    font-size: 15px;
+    color: rgb(25, 25, 25);
+    font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+body
+{
+    background-color: aliceblue;
+}
+
+#header
+{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(225, 250, 255);
+    border-bottom: solid 2px rgb(90, 90, 255);
+    display: flex;
+    justify-content: space-between;
+}
+
+#site-title
+{
+    padding: 30px 10px;
+    font-size: 1.8rem;
+}
+
+.menu-list
+{
+  color: white;
+  font-weight: bold;
+}
+
+#menu-btn
+{
+  margin-top: 25px;
+  margin-right: 80px;
+  z-index: 80;
+}
+  
+.menu
+{
+  background-color: rgb(90, 90, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  height:50px;
+  position: absolute;
+  width: 50px;
+  z-index: 80;
+}
+  
+.menu span
+{
+  border-radius: 2px;
+  background: white;
+  display: inline-block;
+  height: 3px;
+  position: absolute;
+  transition: all 0.1s;
+  width: 60%;
+  z-index: 80;
+}
+  
+.menu span:nth-of-type(1)
+{
+  top: 12px;
+  left: 10px;
+}
+  
+.menu span:nth-of-type(2)
+{
+  top: 25px;
+  left: 10px;
+}
+  
+.menu span:nth-of-type(3)
+{
+  top: 38px;
+  left: 10px;
+}
+  
+.menu.active span:nth-of-type(1)
+{
+  transform: translateY(13px) rotate(-45deg);
+  width: 60%;
+}
+  
+.menu.active span:nth-of-type(2)
+{
+  opacity: 0;
+}
+  
+.menu.active span:nth-of-type(3)
+{
+  transform: translateY(-13px) rotate(45deg);
+  width: 60%;
+}
+
+#header-item
+{
+  background-color: rgb(225, 250, 255);
+  position:fixed;
+  top:0;
+  right: -120%;
+  height: 100vh;
+  transition: all 0.5s;
+  width: 30%;
+  z-index: 70;
+}
+
+#header-item.panelactive
+{
+  right: 0;
+}
+
+#header-item ul
+{
+  top: 195px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  z-index: 80;
+}
+
+#header-item li
+{
+  background-color: rgb(90, 90, 255);
+  border: 2px solid rgb(225, 250, 255);
+  list-style: none;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+
+#header-item li:focus, #header-item li:hover
+{
+  background-color: lightskyblue;
+  color: rgb(25, 25, 25);
+}
+
+#modal
+{
+  z-index: 60;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;     
+  background-color:rgba(50, 50, 50, 0.5);
+}
+
+#main {
+    width: 320px;
+    margin: auto;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+.form-unit {
+    text-align: left;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.form-btn {
+    margin: auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: purple;
+}
+
+.hyper-link {
+    word-break: break-all;
+}
+
+.post-btn {
+    width: 200px;
+    height: 50px;
+    margin: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: large;
+    background-color: rgb(90, 90, 255);
+    border: rgb(90, 90, 255) solid 2px;
+    outline: 0;
+}
+
+.post-btn:hover, .post-btn:focus {
+    background-color: rgb(0, 145, 165);
+    border: rgb(0, 145, 165) solid 2px;
+    outline: 0;
+}
+
+.section-title {
+    font-size: 1.1rem;
+}
+
+.label {
+    font-weight: bold;
+    font-size: large;
+}
+
+.input-text {
+    width: 280px;
+    height: 40px;
+    background-color: aliceblue;
+    border: rgb(0, 145, 165) solid 2px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.input-text:hover, .input-text:focus {
+    border: rgb(90, 90, 255) solid 2px;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.input-textarea {
+    font-size: 18px;
+    background-color: aliceblue;
+    border-bottom: rgb(90, 90, 255) solid 2px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.input-textarea:hover, .input-textarea:focus {
+    outline: 0;
+}
+
+#container {
+    height: auto;
+    margin: auto;
+}
+
+#input-caution, #password-score {
+    color: red;
+}
+
+.caution {
+    text-align: center;
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+    #site-title {
+        padding-top: 35px;
+        padding-left: 10px;
+        font-size: 1.2rem;
+    }
+
+    .post-btn {
+        width: 175px;
+        height: 50px;
+    }
+
+    #header-item {
+        width: 50%;
+        padding: 15px;
+    }
+}

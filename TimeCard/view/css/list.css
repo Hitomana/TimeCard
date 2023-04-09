@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+th
+{
+    background-color: rgb(180, 245, 255);
+    padding: 5px;
+}
+
+#date
+{
+    width: 5%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#start, #end
+{
+    width: 7%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#detail
+{
+    width: 70%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.date-row 
+{
+    width: 5%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.start-row, .end-row
+{
+    width: 7%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.detail-row
+{
+    width: 70%;
+    padding-left: 20px;
+    text-align: left;
+    padding-top: 10px;
+    content: "\A" ;
+	white-space: pre-wrap;
+    word-break: break-all;
+}
+
+td
+{
+    padding: 5px;
+}
+
+.post-btn
+{
+    width: 120px;
+}
+
+#search
+{
+    width: 160px;
+}
+
+.search-btn
+{
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.search-btn:focus
+{
+    outline: blue solid 2px;
+}
+
+#select-work-and-learn 
+{
+    width: 50px;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+#task-list
+{
+    width: 100%;
+    margin: auto;
+}
+
+#contents
+{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#search-form
+{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(180, 245, 255);
+    padding: 15px;
+}
+
+@media screen and (max-width: 600px)
+{
+
+    html {
+        font-size: 10px;
+    }
+
+    #site-title {
+        font-size: 20px;
+    }
+
+    thead {
+        width: 95%;
+    }
+
+    #search-form {
+        width: 95%;
+    }
+
+    #contents {
+        width: 95%;
+    }
+
+    #task-list {
+        width: 95%;
+    }
+}

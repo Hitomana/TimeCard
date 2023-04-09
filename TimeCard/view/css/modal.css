@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.button-link {
+    font-size: 150%;
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+.button-link:hover, .button-link:focus {
+    color: purple;
+    cursor: pointer;
+}
+
+.modal-text {
+    text-align: left;
+}
+    
+#progress, #content {
+    resize: none;
+    width: 90%;
+    height: 200px;
+    margin: 10px;
+}
+
+#rest-form, #finish-form{
+    z-index: 2;
+    display: none;
+    
+    position: fixed;
+    top: 100px;
+    text-align: center;
+    
+    width: 40%;
+    height: auto;
+    margin: 7.5% 30%;        
+    padding: 10px;
+    
+    background-color: rgb(225, 225, 255);
+    border: rgb(90, 90, 255) solid 2px;
+    border-radius: 10px;
+}
+
+#modal-overlay{
+    z-index: 1;
+    display: none;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    margin-top:0px;     
+
+    background-color:rgba(50, 50, 50, 0.5);
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    #rest-form, #finish-form {
+        width: 50%;
+        margin: 15% 25%;     
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    #rest-form, #finish-form {
+        width: 60%;
+        margin: 15% 20%;     
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 600px) {
+    #rest-form, #finish-form {
+        width: 75%;
+        margin: 15% 12.5%;     
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 450px) {
+    #rest-form, #finish-form {
+        width: 90%;
+        margin: 20% 5%;     
+    }
+}
+
+@media screen and ((min-width: 321px) and (max-width: 375px)) {
+    #rest-form, #finish-form {
+        width: 100%;
+        margin: 30% 0;
+    }   
+}

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+#input-form
+{
+    width: 320px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: rgb(225, 250, 255);
+    border: rgb(90, 90, 255) solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+#container
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#help-link
+{
+    text-align: right;
+}
+
+@media screen and (min-width: 1920px)
+{
+
+    #input-form{
+        margin-top: 250px;
+        margin-bottom: 250px;
+    }
+
+}
+
+@media screen and (max-width: 600px)
+{
+    
+        #input-form {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }   
+}
