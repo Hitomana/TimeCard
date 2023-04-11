@@ -153,7 +153,7 @@
 <br><br>
 <br><br>
 
-## フォーム入力の際の注意点
+### フォーム入力の際の注意点
 
 <br><br>
 空白、または140字以上のテキストを送信することはできません。
@@ -190,14 +190,10 @@
 ここでは休憩開始時に入力した進捗も表示されます。「作業　→　休憩　→　作業終了」の流れで進捗の補足を追記することが可能です。
 <br><br>
 
-![img (28)](https://user-images.githubusercontent.com/85372985/231194444-0239be17-2098-49e1-b64d-64aa41f2d06e.jpg)
+![img (26)](https://user-images.githubusercontent.com/85372985/231194450-753b31a6-3674-46f3-8bee-c8ef8aff4ccc.jpg)
 
 <br><br>
 追記後に（しなくても可）「送信」を押下してください。
-<br><br>
-
-![img (26)](https://user-images.githubusercontent.com/85372985/231194450-753b31a6-3674-46f3-8bee-c8ef8aff4ccc.jpg)
-
 <br><br>
 送信ボタンの押下後、作業・学習選択画面に遷移します。
 <br><br>
